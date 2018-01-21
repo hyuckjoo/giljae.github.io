@@ -1,0 +1,260 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  background: white;
+  color: #444;
+}
+a {
+  color: #08c;
+  text-decoration: none;
+}
+a:hover {
+  color: #1ab2ff;
+}
+#hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(img/main.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#cover-dark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+#header {
+  width: 90%;
+  max-width: 440px;
+  text-align: center;
+  padding: 8px 0;
+  color: #eee;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  font-size: 24px;
+  line-height: 1;
+  z-index: 1;
+  margin-top: -80px;
+}
+#header > div,
+#header > ul {
+  margin: 24px 0;
+}
+#name {
+  font-size: 60px;
+  font-weight: bold;
+}
+#location .icon-map-marker {
+  margin: 0 16px;
+}
+#content > p {
+  max-width: 90%;
+}
+#insta {
+  width: 100%;
+  max-width: 1128px;
+  margin: 0 auto;
+}
+.instarow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+.instarow > a {
+  display: inline-block;
+  position: relative;
+  width: -webkit-calc(33.33333333vw);
+  width: calc(33.33333333vw);
+  height: -webkit-calc(33.33333333vw);
+  height: calc(33.33333333vw);
+  max-width: 360px;
+  max-height: 360px;
+  margin: 8px 2px;
+}
+.instarow div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+.social-links li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 2px;
+}
+.social-links li a {
+  color: inherit;
+  cursor: pointer;
+}
+.social-links li div {
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 42px;
+  padding: 60px 0 20px 0;
+}
+h1:not(:first-child) {
+  border-top: 1px solid #e6e6e6;
+  margin: 60px auto 0 auto;
+}
+h1 a {
+  color: inherit;
+}
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.boxes {
+  width: 780px;
+  max-width: 90%;
+}
+.boxes.one .box {
+  width: 440px;
+  max-width: 90%;
+}
+.boxes.two {
+  -webkit-align-items: baseline;
+  align-items: baseline;
+}
+.boxes.two .box {
+  max-width: 90%;
+  vertical-align: top;
+  margin: 16px;
+  width: 340px;
+}
+.boxes.two .title {
+  font-size: 18px;
+}
+.flex {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.flexwrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.f1 {
+  -webkit-flex: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+a.box {
+  color: inherit !important;
+  cursor: pointer;
+}
+.box {
+  width: 200px;
+  margin: 30px;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+.box.center {
+  width: 600px;
+}
+.box img {
+  width: 100%;
+}
+.box .title {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+.box .desc {
+  line-height: 1.1;
+  color: #666;
+  font-size: 16px;
+  text-align: left;
+}
+.boxa {
+  color: inherit;
+}
+.aboutme {
+  width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+#travelsWrapper {
+  overflow: hidden;
+}
+#travels {
+  display: block;
+  margin-top: -50px;
+  max-width: 100%;
+  pointer-events: none;
+}
+#instagramLink {
+  text-align: center;
+  margin-top: 32px;
+}
+.footer {
+  margin-top: 40px;
+  line-height: 60px;
+}
+@media (max-width: 600px) {
+  h1:not(:first-child) {
+    margin-top: 60px;
+  }
+  #header {
+    font-size: 20px;
+    border: 0;
+  }
+  #name {
+    font-size: 44px;
+  }
+  .box {
+    width: auto;
+    margin: 20px 0;
+    min-width: 40%;
+    max-width: 40%;
+    -webkit-flex: 1 0 40%;
+    -webkit-box-flex: 1 0 40%;
+    -ms-flex: 1 0 40%;
+    flex: 1 0 40%;
+  }
+}

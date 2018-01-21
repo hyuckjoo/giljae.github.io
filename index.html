@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Giljae Joo</title>
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,500,600,700' rel='stylesheet' type='text/css'>
+
+        <script></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="hero" class="flex">
+                <div id="cover-dark"></div>
+                <div id="header" class="f1">
+                    <div id="name">Giljae Joo</div>
+                    <div id="location">Currently in<span class="icon-map-marker"></span><span id="locationText"></span></div>
+                    <ul class="social-links">
+                        <li><a href="http://www.facebook.com/giljae"><div class="icon-facebook"></div></a></li>
+                        <li><a href="http://www.twitter.com/giljae"><div class="icon-twitter"></div></a></li>
+                        <li><a href="http://instagram.com/giljae"><div class="icon-instagram"></div></a></li>
+                        <li><a href="mailto:giljae@gmail.com"><div class="icon-envelope"></div></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <h1>About Me</h1>
+                <p class="aboutme">I'm building <a href="https://moo.do">Moo.do</a> while traveling indefinitely and living out of a 27L backpack. I worked at <a href="https://www.microsoft.com/appliedsciences/">Microsoft</a> until 2012, then lived in San Francisco for a year until I discovered that <a href="http://entrepreneur.com/article/241761">it's cheaper and more fun to build a startup while traveling</a>. So I'm making the most of my limited free time (startup life!) by exploring new places and seeing the world. I love <a href="http://instagram.com/jayzus">photography</a>, walking around strange new places, hiking, skiing, frisbee, hip hop, and Minions.</p>
+
+                <h1>Sites</h1>
+                <div class="boxes flex flexwrap work">
+                    <a class="box" href="https://blog.giljae.com">
+                        <img id="bloggerlogo" src="img/blogger.png" />
+                        <div class="title">Blog</div>
+                    </a>
+                </div>
+            </div>
+            <div class="footer center">
+                <a href="/">Giljae Joo</a> © 2017
+            </div>
+        </div>
+
+        <script>
+            (function() {
+                var itinerary = [
+                    '01/19', 'Seoul, ROK'
+                ];
+                var today = new Date();
+                var location;
+                for(var i = 0; i < itinerary.length; i += 2)
+                {
+                    itinerary[i] += '/17';
+                    var date = new Date(itinerary[i]);
+                    if(today < date)
+                        break;
+                    location = itinerary[i + 1];
+                }
+                document.getElementById('locationText').textContent = location;
+            })();
+        </script>
+    </body>
+</html>
